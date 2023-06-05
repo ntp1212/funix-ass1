@@ -1,0 +1,233 @@
+body {
+  margin: 0px;
+  text-align: justify;
+}
+
+.cv-document {
+  box-sizing: border-box;
+  border: none;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  margin: 40px;
+  padding: 40px;
+  border: 40px;
+  width: 100%;
+  font-family: arial, sans-serif, tahoma;
+  font-size: 10pt;
+}
+/* căn chỉnh lề ngoài cùng */
+.cv-page {
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-decoration: none;
+  width: 900px;
+  min-height: 900px;
+  margin: 0 auto;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  position: relative;
+
+  padding: 100px;
+}
+/*căn chỉnh thẻ ngoài các mục lớn*/
+.section {
+  position: relative;
+  margin: 40px;
+}
+/* .div.setion-content {
+  margin: 0;
+  text-align: justify;
+} */
+/* căn chỉnh thẻ ảnh */
+.img {
+  width: 113px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* căn chỉnh thẻ các mục lớn */
+.section-title {
+  text-transform: uppercase;
+  border-bottom: 1px solid black;
+  font-size: 24px;
+  text-align: justify;
+  margin: 40px 0 0 0;
+  color: rgb(0, 0, 0);
+}
+/* căn chỉnh độ rộng của chữ ở thẻ strong  */
+strong {
+  font-weight: 800;
+}
+/* căn chỉnh thẻ h1 */
+h1.section-title {
+  text-transform: inherit;
+  border-bottom: 1px solid black;
+  font-size: 30px;
+  text-align: justify;
+  margin: 40px 0 10px 0;
+  color: #0e2452;
+  border: none;
+}
+/* tạo flex box */
+.container-boxs {
+  display: flex;
+  padding: 10px;
+}
+.inline-block {
+  display: block;
+  width: 5rem;
+  height: auto;
+  min-width: 7rem;
+  margin: 0;
+  border: 0;
+}
+/* căn chỉnh thẻ p trong mục tiêu nghề nghiệp */
+.section-content p {
+  margin: 5px 0;
+}
+/* căn thẻ mục học vấn và kinh nghiệm   */
+/* 1> tạo flex-box  */
+.container-box {
+  display: flex;
+  padding: 0;
+
+  flex-direction: column;
+  position: relative;
+}
+.container-box1 {
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(205, 201, 201, 0.5);
+  margin: 5px;
+}
+
+/* 2>căn thẻ con bên phải điều chỉnh font*/
+.container-box1-1 {
+  min-width: 40em;
+  padding: 0 0em;
+  margin: 0 10em;
+  text-align: left;
+}
+div.container-box1-1 ul {
+  display: block;
+  width: 500px;
+  padding: 0;
+  list-style-type: none;
+}
+.container-box1-2 {
+  padding: 0;
+  border: 0;
+  min-width: 11em;
+}
+ul.container-box1-1,
+div.container-box1-1 {
+  list-style-type: none;
+}
+/* 3> căn thẻ input  */
+.time {
+  width: 4em;
+  padding: 0;
+  border: none;
+}
+/* tạo thanh thời gian  */
+.time-line {
+  position: relative;
+  max-width: 40em;
+  margin: 0 5px;
+}
+
+.time-line::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  background-color: #0a0909;
+  bottom: 10px;
+  top: 10px;
+  left: -10px;
+
+  color: rgb(0, 0, 0);
+}
+/* .container-box::before {
+  content: " ";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: -15px;
+  background-color: #0a0909;
+  border: 2px solid red;
+  top: 12px;
+  border-radius: 50%;
+  z-index: 1;
+} */
+.container-box1::after {
+  content: " ";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: -15px;
+  background-color: #0a0909;
+  border: 2px solid red;
+  border-radius: 50%;
+  z-index: 1;
+}
+/* căn phầ hoạt động, kĩ năng, chứng chỉ */
+.container2 {
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+  position: relative;
+}
+.container-box2 {
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+  margin: 0;
+  border-bottom: 1px solid rgba(205, 201, 201, 0.5);
+}
+.container-box2-1 {
+  min-width: 40em;
+  list-style-type: none;
+}
+.container-box2 div p {
+  margin: 0;
+  border: 0;
+  text-align: left;
+}
+/* căn phần sở thích dự án  */
+.section-content > ul {
+  list-style-type: none;
+  padding: 0px;
+}
+.box ul {
+  margin: 0;
+  padding: 11px;
+}
+.inline {
+  list-style-type: disc;
+}
+/* căn chỉnh thẻ nav  */
+nav {
+  border-bottom: 1px solid rgba(205, 201, 201, 0.5);
+}
+/* căn chỉnh thẻ hyperlink */
+a:link {
+  color: blue;
+}
+a:visited {
+  color: red;
+  font-size: 30px;
+}
+a:hover {
+  color: yellow;
+  background-color: blue;
+}
+a:active {
+  color: violet;
+}
